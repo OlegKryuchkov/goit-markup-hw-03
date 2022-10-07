@@ -1,0 +1,325 @@
+/* ---------------COLORS----------------*/
+/* 
+
+header-text-primary #212121
+header-text-secondary #757575
+header-text-accent #2196F3
+
+hero-text-primary #ffffff
+
+body-text-primary #212121
+body-text-secondary #757575
+
+footer-text-primary #ffffff
+footer-text-secondary rgba(255, 255, 255, 0.6);
+footer-text-accent #2196F3
+
+button-background-primary #2196f3
+button-background-secondary #F5F4FA
+button-text-primary #ffffff
+button-text-secondary #212121
+
+background-primary #ffffff
+background-secondary #2F303A
+background-tertiary #F5F4FA
+
+*/
+
+:root {
+  --background-primary: #ffffff;
+  --background-secondary: #2f303a;
+  --background-tertiary: #f5f4fa;
+  --header-text-primary: #212121;
+  --header-text-secondary: #757575;
+  --header-text-accent: #2196f3;
+  --hero-text-primary: #ffffff;
+  --body-text-primary: #212121;
+  --body-text-secondary: #757575;
+  --footer-text-primary: #ffffff;
+  --footer-text-secondary: rgba(255, 255, 255, 0.6);
+  --footer-text-accent: #2196f3;
+  --button-background-primary: #2196f3;
+  --button-background-secondary: #f5f4fa;
+  --button-text-primary: #ffffff;
+  --button-text-secondary: #212121;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  background: var(--background-primary);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ---------------HEADER(MAIN+PORTFOLIO)---------------*/
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-primary);
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.header-logo-span {
+  color: var(--header-text-accent);
+}
+
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-secondary);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--header-text-accent);
+}
+
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-secondary);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--header-text-accent);
+}
+
+/* ---------------SECTION HERO----------------*/
+.hero {
+  background: var(--background-secondary);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-text-primary);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--hero-text-primary);
+  background: var(--button-background-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------------SECTION BENEFITS----------------*/
+.benefits {
+}
+.benefits-title {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--body-text-primary);
+}
+.benefits-item-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--body-text-secondary);
+}
+
+/* ---------------SECTION WHATWEDO----------------*/
+
+.whatwedo {
+}
+.whatwedo-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: var(--body-text-primary);
+}
+
+.whatwedo-list {
+}
+.whatwedo-item {
+}
+
+/* ---------------SECTION TEAM----------------*/
+.team {
+  background: var(--background-tertiary);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: var(--body-text-primary);
+}
+.team-list {
+}
+.team-item {
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--body-text-primary);
+}
+.team-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--body-text-secondary);
+}
+
+/* ---------------FOOTER----------------*/
+.footer {
+  background: var(--background-secondary);
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--footer-text-primary);
+}
+.footer-logo-span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--footer-text-accent);
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--footer-text-primary);
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--footer-text-accent);
+}
+
+.footer-list {
+}
+.footer-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--footer-text-secondary);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--footer-text-accent);
+}
+
+.footer-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--footer-text-secondary);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--footer-text-accent);
+}
+
+/* ---------------PORTFOLIO MENU----------------*/
+
+.menu-title {
+}
+.menu-list {
+}
+.btn-menu-item {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--body-text-primary);
+  background: var(--button-background-secondary);
+
+  cursor: pointer;
+}
+
+.btn-menu-item:hover .btn-menu-item:focus {
+  color: var(--button-text-primary);
+  background: var(--button-background-primary);
+}
+
+/* ---------------PORTFOLIO PRODUCTS----------------*/
+
+.products {
+}
+.products-list {
+}
+.products-item {
+}
+.products-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--body-text-primary);
+}
+.products-item-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--body-text-secondary);
+}
