@@ -44,6 +44,30 @@ background-tertiary #F5F4FA
   --button-text-secondary: #212121;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+
 body {
   font-family: roboto, sans-serif;
   background: var(--background-primary);
@@ -57,7 +81,57 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ---------------HEADER(MAIN+PORTFOLIO)---------------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container .header-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-list .item {
+  margin-right: 50px;
+}
+
+.header-list .item:last-child {
+  margin-right: 0;
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -67,6 +141,8 @@ body {
 }
 
 .header-logo {
+  margin-right: 93px;
+
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -76,6 +152,17 @@ body {
 }
 .header-logo-span {
   color: var(--header-text-accent);
+}
+
+.header-list-contacts {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header-list-contacts .item + .item {
+  margin-left: 50px;
 }
 
 .header-mail {
@@ -107,6 +194,9 @@ body {
 /* ---------------SECTION HERO----------------*/
 .hero {
   background: var(--background-secondary);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -116,9 +206,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-text-primary);
+  margin-bottom: 30px;
 }
 
 .hero-button {
+  min-width: 216px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -129,17 +221,28 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* ---------------SECTION BENEFITS----------------*/
-.benefits {
-}
+
 .benefits-title {
 }
-.benefits-list {
+.benefits .benefits-list {
+  display: flex;
+  justify-content: space-between;
 }
 .benefits-item {
+  margin-left: 30px;
 }
+
+.benefits-item:first-child {
+  margin-left: 0;
+}
+
 .benefits-item-title {
   font-weight: 700;
   font-size: 14px;
@@ -147,6 +250,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--body-text-primary);
+  margin-bottom: 10px;
 }
 .benefits-item-description {
   font-weight: 400;
@@ -158,17 +262,18 @@ body {
 
 /* ---------------SECTION WHATWEDO----------------*/
 
-.whatwedo {
-}
 .whatwedo-title {
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--body-text-primary);
 }
 
-.whatwedo-list {
+.whatwedo .whatwedo-list {
+  display: flex;
+  justify-content: space-between;
 }
 .whatwedo-item {
 }
@@ -180,11 +285,15 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--body-text-primary);
+  margin-bottom: 50px;
 }
-.team-list {
+.container .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 .team-item {
 }
@@ -194,20 +303,27 @@ body {
   line-height: calc(19 / 16);
   /* identical to box height */
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--body-text-primary);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-item-description {
   font-weight: 400;
   font-size: 16px;
+  text-align: center;
   line-height: calc(19 / 16);
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--body-text-secondary);
+  margin-bottom: 30px;
 }
 
 /* ---------------FOOTER----------------*/
 .footer {
   background: var(--background-secondary);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway";
@@ -238,6 +354,7 @@ body {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--footer-text-primary);
+  margin-top: 20px;
 }
 
 .footer-adress:hover,
@@ -246,8 +363,10 @@ body {
 }
 
 .footer-list {
+  display: block;
 }
 .footer-mail {
+  margin-top: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -281,9 +400,20 @@ body {
 
 .menu-title {
 }
+
+.container .menu-list {
+  display: flex;
+  justify-content: center;
+}
 .menu-list {
+  margin-bottom: 50px;
 }
 .btn-menu-item {
+  margin-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -292,6 +422,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--body-text-primary);
   background: var(--button-background-secondary);
+  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -303,11 +434,25 @@ body {
 
 /* ---------------PORTFOLIO PRODUCTS----------------*/
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .products {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.products-list {
+.container .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.products-item {
+.products-item .img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .products-item-title {
   font-weight: 700;
@@ -315,6 +460,8 @@ body {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--body-text-primary);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .products-item-description {
   font-weight: 400;
@@ -322,4 +469,6 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--body-text-secondary);
+  margin-top: 4px;
+  margin-left: 24px;
 }
