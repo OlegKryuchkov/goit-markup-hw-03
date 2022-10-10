@@ -110,6 +110,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -137,6 +138,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-text-primary);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  color: var(--header-text-accent);
 }
 
 .header-logo {
@@ -199,6 +206,7 @@ body {
 }
 
 .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -219,6 +227,7 @@ body {
   background: var(--button-background-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   cursor: pointer;
   display: inline-block;
   margin: 0 auto;
@@ -227,6 +236,10 @@ body {
 }
 
 /* ---------------SECTION BENEFITS----------------*/
+
+.benefits {
+  padding-top: 94px;
+}
 
 .benefits-title {
 }
@@ -273,6 +286,7 @@ body {
 .whatwedo .whatwedo-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .whatwedo-item {
 }
@@ -295,6 +309,10 @@ body {
   justify-content: space-between;
 }
 .team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item-title {
   font-weight: 500;
@@ -304,10 +322,15 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--body-text-primary);
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
+
+.team-item-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item-description {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -315,7 +338,6 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--body-text-secondary);
-  margin-bottom: 30px;
 }
 
 /* ---------------FOOTER----------------*/
@@ -344,8 +366,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--footer-text-accent);
 }
+.footer-list {
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.footer-list .item {
+  margin-bottom: 9px;
+}
+
+.footer-list .item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-contacts {
+}
 
 .footer-adress {
+  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -353,7 +391,6 @@ body {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--footer-text-primary);
-  margin-top: 20px;
 }
 
 .footer-adress:hover,
@@ -361,11 +398,7 @@ body {
   color: var(--footer-text-accent);
 }
 
-.footer-list {
-  display: block;
-}
 .footer-mail {
-  margin-top: 9px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -408,7 +441,6 @@ body {
   margin-bottom: 50px;
 }
 .btn-menu-item {
-  margin-right: 8px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -422,11 +454,21 @@ body {
   color: var(--body-text-primary);
   background: var(--button-background-secondary);
   border-radius: 4px;
+  border-color: transparent;
 
   cursor: pointer;
 }
+.menu-list .item {
+  margin-right: 9px;
+}
 
-.btn-menu-item:hover .btn-menu-item:focus {
+.menu-list .item:last-child {
+  margin-right: 0;
+}
+
+.btn-menu-item:hover,
+.btn-menu-item:focus,
+.btn-menu-item:active {
   color: var(--button-text-primary);
   background: var(--button-background-primary);
 }
@@ -459,8 +501,7 @@ img {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--body-text-primary);
-  margin-top: 20px;
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 .products-item-description {
   font-weight: 400;
@@ -468,6 +509,15 @@ img {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--body-text-secondary);
-  margin-top: 4px;
-  margin-left: 24px;
+}
+
+.products-list-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
